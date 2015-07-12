@@ -1,0 +1,9 @@
+{
+  "name": "pointer-lock",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/emitter": "*",
+    "juliangruber/stream": "*"
+  }
+}

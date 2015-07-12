@@ -2,8 +2,13 @@ module.exports = pointer
 
 pointer.available = available
 
+try {
 var EE = require('events').EventEmitter
   , Stream = require('stream').Stream
+} catch (e) {
+  var EE = require('emitter')
+    , Stream = require('stream')
+}
 
 function available() {
   return !!shim(document.body)
